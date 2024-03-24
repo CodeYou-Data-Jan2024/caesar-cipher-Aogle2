@@ -9,5 +9,3 @@ def cipher(text, shift):
         else:
             result += char
     return result
-
-print(cipher("Test thing", 5))
