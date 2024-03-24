@@ -10,6 +10,3 @@ def cipher(text: str =input()):
         else:
             result += char
     return('The encrypted sentence is: ' + result.lower())
-
-
-cipher()
