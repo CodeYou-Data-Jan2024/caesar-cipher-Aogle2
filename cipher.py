@@ -1,7 +1,6 @@
 # add your code here
-def cipher():
+def cipher(original_sentence = input() ):
     result = ""
-    original_sentence = input() 
     shift = 5
     for char in original_sentence:
         if char.isalpha():
@@ -11,5 +10,3 @@ def cipher():
         else:
             result += char
     return('The encrypted sentence is: ' + result.lower())
-
-cipher()
