@@ -8,4 +8,4 @@ def cipher(text):
             result += shifted
         else:
             result += char
-    return result
+    print('The encrypted sentence is: '+result)
