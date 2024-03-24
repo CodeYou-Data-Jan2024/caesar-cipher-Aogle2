@@ -1,10 +1,10 @@
 # add your code here
-def cipher(text, shift):
+def cipher(text):
     result = ""
     for char in text:
         if char.isalpha():
             base = ord('A') if char.isupper() else ord('a')
-            shifted = chr((ord(char) - base + shift) % 26 + base)
+            shifted = chr((ord(char) - base + 5) % 26 + base)
             result += shifted
         else:
             result += char
