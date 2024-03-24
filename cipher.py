@@ -1,8 +1,9 @@
 # add your code here
-def cipher(text: str =input()):
-    result = "" 
+def cipher():
+    result = ""
+    original_sentence = input() 
     shift = 5
-    for char in text:
+    for char in original_sentence:
         if char.isalpha():
             base = ord('A') if char.isupper() else ord('a')
             shifted = chr((ord(char) - base + shift) % 26 + base)
@@ -10,3 +11,5 @@ def cipher(text: str =input()):
         else:
             result += char
     return('The encrypted sentence is: ' + result.lower())
+
+cipher()
