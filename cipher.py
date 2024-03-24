@@ -9,4 +9,4 @@ def cipher(text):
             result += shifted
         else:
             result += char
-    print('The encrypted text is: ' + result.lower())
+    print('The encrypted sentence is: ' + result.lower())
